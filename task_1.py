@@ -19,5 +19,3 @@ def longest_word(words):
 
 words = words_from_file("words.txt")
 
-
-print(longest_word(words))
