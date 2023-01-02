@@ -4,15 +4,14 @@ def words_from_file(file):
         words.append(x.strip())
 
     return words
-    
-words = words_from_file("words.txt")
 
-def longest_word(words): 
+
+def longest_word(): 
+    words = words_from_file("words.txt")
+
     result_max = words[0]  
     for word in words: 
         if len(word) > len(result_max):
             result_max = word  
 
-    
-    
     return result_max
