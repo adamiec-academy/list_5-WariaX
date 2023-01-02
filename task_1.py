@@ -1,9 +1,10 @@
 def words_from_file(file):
     words = []
     for x in open(file, encoding="utf-8"):
-        words.append(x.strip().split(4 * " "))
+        words.append(x.strip())
 
     return words
+    
 words = words_from_file("words.txt")
 
 def longest_word(words): 
@@ -15,4 +16,3 @@ def longest_word(words):
     
     
     return result_max
-
