@@ -4,7 +4,7 @@ def words_from_file(file):
         words.append(x.strip().split(4 * " "))
 
     return words
-
+words = words_from_file("words.txt")
 
 def longest_word(words): 
     result_max = words[0]  
@@ -15,7 +15,4 @@ def longest_word(words):
     
     
     return result_max
-
-
-words = words_from_file("words.txt")
 
