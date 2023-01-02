@@ -1,9 +1,9 @@
 def words_from_file(file):
-    data = []
+    words = []
     for x in open(file, encoding="utf-8"):
-        data.append(x.strip().split(4 * " "))
-        
-    return data
+        words.append(x.strip().split(4 * " "))
+
+    return words
 
 
 def longest_word(words): 
