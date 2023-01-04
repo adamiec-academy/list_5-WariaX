@@ -1,10 +1,12 @@
 def unique(data):
-   
-    lista = [] 
+    
+    lista = []
+    zbior = set() 
 
     for x in data:
-        if x not in lista:
+        if x not in zbior:
             lista.append(x)
+            zbior.add(x)
 
 
 
